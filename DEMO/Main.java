@@ -1,23 +1,28 @@
 import java.util.Scanner;
 
-public class Largest {
+public class Main{
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        int a = in.nextInt();
-        int b = in.nextInt();
-        int c = in.nextInt();
+        int n1 = 20;
+        int n2 = 30;
 
-        //Q : Is to find the largest number 
-        int max = a;
-        if (b > max) {
-            max = b;
-        }
-        if (c> max) {
-            max = c;
+        if ( n1 == n2)
+
+        {
+            System.out.println(n1 + " is equal to " + n2 );
         }
 
-        System.out.println(max);
+        else if ( n1 > n2)
+        {
+            System.out.println(n1 + " is greater to " + n2 );
+        }
+
+        else {
+            System.out.println(n1 + " is smaller to " + n2 );
+
+        }
         
+
     }
 }
