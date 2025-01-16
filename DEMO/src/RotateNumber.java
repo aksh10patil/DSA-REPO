@@ -36,10 +36,10 @@ public class RotateNumber {
 
         int rot = r * mult + q;
         System.out.println(rot);
-
-
+        scn.close();
 
 
     }
+   
     
 }
