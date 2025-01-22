@@ -8,7 +8,13 @@ public class Pattern5 {
         int sp = n / 2;
         int st = 1;
         for ( int i = 1; i<=n; i++) {
-            System.out.println( sp + "," + st);
+            for ( int j = 1; j <= sp; j++) {
+                System.out.println("\t");
+            }
+
+            for ( int j = 1; j <= st; j++) {
+                System.out.println("*\t");
+            }
 
             if ( i <= n / 2) {
                 sp--;
@@ -17,6 +23,8 @@ public class Pattern5 {
                 sp++;
                 st -= 2; 
             }
+
+            System.out.println();
         }
 
 
