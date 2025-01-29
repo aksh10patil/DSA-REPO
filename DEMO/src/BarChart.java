@@ -1,14 +1,15 @@
+import java.io.*;
 import java.util.Scanner;
 
 public class BarChart {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Scanner scn = new Scanner(System.in);
 
         int n = scn.nextInt();
         int[] arr = new int[n];
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i< arr.length; i++) {
             arr[i] = scn.nextInt();
         }
 
@@ -21,13 +22,12 @@ public class BarChart {
         for ( int floor = max; floor >= 1; floor--) {
             for ( int i = 0; i < arr.length; i++) {
                 if ( arr[i] >= floor) {
-                    System.out.println("*\t");
+                    System.out.print("*\t");  // Use System.out.print here
                 } else {
-                    System.out.println("\t");
+                    System.out.print("\t");  // Use System.out.print here
                 }
             }
-            System.out.println();
+            System.out.println(); // Move to the next floor
         }
     }
 }
-
