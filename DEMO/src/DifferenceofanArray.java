@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.AbstractAction;
-
 public class DifferenceofanArray {
 
     public static void main(String[] args) {
