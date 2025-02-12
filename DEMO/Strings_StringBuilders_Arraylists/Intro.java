@@ -34,9 +34,18 @@ public class Intro {
 
     // }
 
-    String s1 = "hello";
-    String s2 = "world";
-    String s3 = s1  + " " + s2;
-    System.out.println(s3);
+    // String s1 = "hello";
+    // String s2 = "world";
+    // String s3 = s1  + " " + s2;
+    // System.out.println(s3);
+
+
+
+    String s = " abcd def ghi jkl mno ";
+    String[] parts = s.split("");
+    for ( int i = 0; i < parts.length; i++) {
+        System.out.println(parts[i]);
+    }
+
     }
 }
